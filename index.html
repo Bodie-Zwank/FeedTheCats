@@ -1,9 +1,39 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div id="timer">00:00.00</div>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetAllBtn">Reset All</button> <!-- Added Reset All button -->
+    </div>
+    <div class="names-container">
+        <div class="names-scrollable">
+            <ul id="allNames">
+                <li onclick="addName(this)">Name 1</li>
+                <li onclick="addName(this)">Name 2</li>
+                <li onclick="addName(this)">Name 3</li>
+                <li onclick="addName(this)">Name 4</li>
+                <li onclick="addName(this)">Name 5</li>
+                <li onclick="addName(this)">Name 6</li>
+                <li onclick="addName(this)">Name 7</li>
+                <li onclick="addName(this)">Name 8</li>
+                <li onclick="addName(this)">Name 9</li>
+                <li onclick="addName(this)">Name 10</li>
+                <!-- Add more names as needed -->
+            </ul>
+        </div>
+        <div class="selected-names">
+            <p>Selected Names:</p>
+            <ul id="selectedNames"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>

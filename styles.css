@@ -1,1 +1,26 @@
 
+/* styles.css */
+
+.names-scrollable li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.names-scrollable li {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.selected-names li {
+    list-style-type: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
