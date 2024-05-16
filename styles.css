@@ -1,0 +1,21 @@
+/* styles.css */
+
+/* Centering the title */
+h1 {
+    text-align: center;
+  }
+  
+  /* Styling the button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
