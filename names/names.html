@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student Data Entry</title>
-<link rel="stylesheet" href="enter.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Names Page</title>
+  <link rel="stylesheet" href="names.css">
 </head>
 <body>
+  <h1>Student Information</h1>
+  <div id="addStudentForm">
+    <input type="text" id="firstNameInput" placeholder="First Name">
+    <input type="text" id="lastNameInput" placeholder="Last Name">
+    <input type="text" id="gradeInput" placeholder="Grade">
+    <select id="genderInput">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Grade</th>
+        <th>Gender</th>
+        <th>Fastest Time</th>
+      </tr>
+    </thead>
+    <tbody id="studentsTableBody">
+      <!-- Rows will be dynamically added here -->
+    </tbody>
+  </table>
 
-<div class="container">
-  <button onclick="window.location.href='../index.html'">Home</button>
-  <h2>Enter Student Data</h2>
-  <form id="studentForm">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="age">Age:</label>
-      <input type="text" id="age" name="age" required>
-    </div>
-    <div class="form-group">
-      <label for="gender">Gender:</label>
-      <div>
-        <input type="radio" id="male" name="gender" value="male" checked>
-        <label for="male">Male</label>
-      </div>
-      <div>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="grade">Grade:</label>
-      <input type="text" id="grade" name="grade" required>
-    </div>
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-<script src="enter.js"></script>
-
+  <script src="names.js"></script>
 </body>
 </html>
